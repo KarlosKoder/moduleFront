@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+  }
+  .column {
+      float: left;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .left, .right {
+      width: 25%;
+      border-style: solid;
+      border-color: red;
+      background-color: orange;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .middle {
+      width: 50%;
+      border-style: solid;
+      border-color: blue;
+      background-color: coral;
+      font-family: Arial, Helvetica, sans-serif;
+      /*margin-left: 10px;
+      margin-right: 10px;*/
+  }
+  .header {
+      width: 100%;
+      border-style: solid;
+      border-color:red;
+      background-color: blue;
+      font-family: Arial, Helvetica, sans-serif;
+      
+  }
+  .footer {
+      width: 100%;
+      border-style: solid;
+      border-color: blue;
+      background-color: magenta;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .article {
+      border-style: solid;
+      border-color: coral;
+      background-color: yellow;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav {
+      border-style: solid;
+      border-color: green;
+      background-color: orange;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 10px;
+  }
+
+/* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  @media screen and (max-width: 600px) {
+      .column {
+      width: 100%;
+  }
+}
